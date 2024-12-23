@@ -1,0 +1,27 @@
+{
+  "name": "hhtml",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "bootstrap": "ts-patch install",
+    "build": "npm run clean && tsc --build",
+    "clean": "tsc --build --clean",
+    "prepack": "npm run build"
+  },
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "bin": {
+    "videobot": "./bin/run"
+  },
+  "author": "Mateusz Pietrzak",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "ts-patch": "^3.2.1",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4",
+    "typescript-transform-paths": "^3.4.11"
+  }
+}
